@@ -638,6 +638,7 @@ nav ul li a:hover {
 /*==================== AFTERMOVIE SECTION ====================*/
 .aftermovie-section {
     width: 100%;
+    overflow: hidden;
     height: 1050px;
     background: linear-gradient(180deg, #7C0211, #58090F);
     display: flex;

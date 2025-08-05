@@ -424,6 +424,7 @@ nav ul li a:hover {
 
 /*==================== GREATSPEAKER SECTION ====================*/
 .greatspeaker-section {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;

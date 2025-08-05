@@ -769,6 +769,7 @@ nav ul li a:hover {
 /*==================== FAQ SECTION ====================*/
 .faq-section {
     width: 100%;
+    overflow: hidden;
     height: 980px;
     padding-top: 5em;
     display: flex;

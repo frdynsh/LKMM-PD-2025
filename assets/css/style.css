@@ -354,6 +354,7 @@ nav ul li a:hover {
 /*==================== GUIDEBOOK SECTION ====================*/
 .guidebook-section {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;

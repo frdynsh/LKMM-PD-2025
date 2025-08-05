@@ -47,6 +47,7 @@ nav .logo span {
 }
 
 nav ul {
+    
     display: flex;
     align-items: center;
     gap: 40px;
@@ -230,7 +231,7 @@ nav ul li a:hover {
     background-color: #FFFFFF;
     padding: 20px;
     position: relative;
-    height: 700px;
+    height: 800px;
 }
 .maskot-section .maskot-content {
     display: flex;
@@ -294,7 +295,7 @@ nav ul li a:hover {
 /*==================== BENEFIT SECTION ====================*/
 .benefit-section {
     position: relative;
-    height: 700px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,6 +320,7 @@ nav ul li a:hover {
 
 .benefit-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
@@ -401,7 +403,7 @@ nav ul li a:hover {
     top: 42%;
     left: 90%;
 }
-.guidebook-container {
+.guidebook-container .kotak {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -524,6 +526,8 @@ nav ul li a:hover {
     top: 53%;
     right: 0;
 }
+
+
 /*==================== DOKUMENTASI SECTION ====================*/
 .dokumentasi-section {
     display: flex;
@@ -534,12 +538,16 @@ nav ul li a:hover {
     color: #ffffff;
     padding: 20px;
     position: relative;
-    height: 700px;
+    height: 900px;
+    overflow: hidden;
 }
+
 .dokumentasi-section h2 {
+    padding-top: 100px;
     font-size: clamp(4.5rem, 8.64086vw, 5rem);
     font-weight: bold;
 }
+
 .dokumentasi-section p {
     color: #ffffff;
     max-width: 700px;
@@ -549,18 +557,93 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.slider {
+  width: 85%;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
 
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll-right 40s linear infinite;
+    will-change: transform;
+}
+
+.slider-left .slider-track {
+    animation: scroll-left 40s linear infinite;
+}
+
+.card-dokumentasi {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.card-dokumentasi:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Animasi scroll */
+@keyframes scroll-right {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.popup img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
 
 /*==================== AFTERMOVIE SECTION ====================*/
 .aftermovie-section {
     width: 100%;
-    height: 1000px;
+    height: 1050px;
     background: linear-gradient(180deg, #7C0211, #58090F);
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 80px;
 }
 .aftermovie-section h2 {
     color: #FFFFFF;
@@ -908,8 +991,8 @@ input[type="checkbox"] {
 }
   
   
-  /*========= CONTACT SECTION =========*/
-  .popup-contact {
+/*========= CONTACT SECTION =========*/
+.popup-contact {
     position: fixed;
     top: 0;
     left: 0;
@@ -939,10 +1022,10 @@ input[type="checkbox"] {
     padding: 40px;
     border-radius: 20px;
     position: relative;
-    background: linear-gradient(180deg, #2A049C, #5F29FF);
+    background: linear-gradient(0deg, #172944, #0d4872);
     animation: slideIn 0.5s ease-out;
 }
-.close-btn {
+.close-button {
     position: absolute;
     top: -0.5rem;
     right: 0.5rem;
@@ -1008,7 +1091,7 @@ input[type="checkbox"] {
 
 .form label .input:focus + span,
 .form label .input:valid + span {
-    color: #d30073;
+    color: #0d4872;
     top: 0px;
     font-size: 0.7em;
     font-weight: 600;
@@ -1020,10 +1103,10 @@ input[type="checkbox"] {
 .submit {
     border: none;
     outline: none;
-    padding: 10px 30px; /* Menyesuaikan ukuran tombol */
+    padding: 10px 30px;
     border-radius: 10px;
     transition: 0.3s ease;
-    background-color: #C3AFFF; /* Warna latar tetap ada */
+    background-color: #2F80ED;
     color: white;
     cursor: pointer;
     text-align: center;
@@ -1033,20 +1116,6 @@ input[type="checkbox"] {
     font-size: 1rem;
 }
 
-.submit::before {
-    content: "Submit"; 
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(90deg, #5F29FF, #2A049C);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-}
 
 @keyframes pulse {
     from {
@@ -1061,123 +1130,123 @@ input[type="checkbox"] {
 }
 
 
-    /* =============== section Footer ================ */
-    footer {
-        color: white;
-        background: linear-gradient(180deg, #2A049C, #0F0136);
-    }
-    
-    .footer-container {
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      flex-direction: row;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .footer-text{
-      display: flex;
-      position: relative;
-      flex-wrap: wrap;
-      gap: 140px;
-      padding: 50px 20px 0 250px;
-    }
-    
-    .footer-section h4 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-    }
-    
-    .footer-section ul li {
-      list-style: none;
-      margin: 15px 0;
-    }
-    
-    .footer-section ul li a {
-      color: white;
-      text-decoration: none;
-      transition: color 0.3s ease;
-      font-size: 1rem;
-    }
-    
-    .footer-section ul li a:hover {
-      color: #b3b3b3;
-    }
-    
-    .logo-section {
-      text-align: center;
-      margin-top: 2em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 206px;
-    }
-    
-    .logo-footer {
-      border-radius: 2rem;
-    }
-    
-    .footer-bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 20px;
-    }
-    
-    .footer-line {
-      width: 100%;
-      height: 5px;
-      background-color: rgb(255, 255, 255);
-      margin-bottom: 10px;
-    }
-    
-    .footer-bottom p {
-      margin: 5px 0;
-      color: white;
-      font-size: 18px;
-      text-align: center;
-    }
-    
-    .footer-logo-container {
-      display: flex;
-      align-items: center;
-    }
-    
-    .footer-logo {
-      max-width: 50px;
-      margin: 10px 10px 10px 0;
-    }
-    
-    .footer-logo-container p {
-      margin: 0;
-      color: white;
-      font-size: 18px;
-    }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      margin-top: 5px;
-    }
-    
-    .social-icons a {
-      color: white;
-      margin: 0 5px;
-      font-size: 20px;
-      transition: color 0.3s ease;
-      background-color: #ffffff0c;
-      border-radius: 50%;
-      line-height: 2px;
-      padding: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-    }
-    
-    .social-icons a:hover {
-      color: #ffffffc2;
-      background-color: #000000b0;
-    }
+/* =============== section Footer ================ */
+footer {
+    color: white;
+    background: linear-gradient(180deg, #2A049C, #0F0136);
+}
+
+.footer-container {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 140px;
+    padding: 50px 20px 0 250px;
+}
+
+.footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+    color: #b3b3b3;
+}
+
+.logo-section {
+    text-align: center;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 206px;
+}
+
+.logo-footer {
+    border-radius: 2rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 50px;
+    margin: 10px 10px 10px 0;
+}
+
+.footer-logo-container p {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 5px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    background-color: #ffffff0c;
+    border-radius: 50%;
+    line-height: 2px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffffffc2;
+    background-color: #000000b0;
+}

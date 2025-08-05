@@ -91,7 +91,7 @@
     <!-- END MASKOT SECTION -->
 
     <!-- START BENEFIT SECTION -->
-    <section class="benefit-section">
+    <section class="benefit-section" id="benefit">
         <div class="benefit-container">
             <h2>Benefits Obtained</h2>
             <div class="benefit-grid">
@@ -148,13 +148,13 @@
         <div class="greatspeaker-content">
             <div class="greatspeaker-item">
             <img src="assets/image/greatspeaker-section/speaker3.svg" alt="Speaker 1">
-            <h3 class="blue">Erviana Yuliani, M.Psi., Psikolog</h3>
-            <p>“Keterampilan Berkomunikasi, Pengenalan, dan Pengembangan Diri”</p>
+            <h3 class="blue">Nina Sulistiyowati, ST, M.Kom.</h3>
+            <p>“Mengembangkan Sifat Kritis dan Pola Pikir Prestatif”</p>
             </div>
             <div class="greatspeaker-item">
             <img src="assets/image/greatspeaker-section/speaker4.svg" alt="Speaker 2">
-            <h3 class="red">Ambar Triyasmin, S. Teh., S. GPT.</h3>
-            <p>“Mengembangkan Sifat Kritis dan Pola Pikir Prestatif”</p>
+            <h3 class="red">Erviana Yuliani, M.Psi., Psikolog</h3>
+            <p>“Keterampilan Berkomunikasi, Pengenalan, dan Pengembangan Diri”</p>
             </div>
             <div class="greatspeaker-item">
             <img src="assets/image/greatspeaker-section/speaker3.svg" alt="Speaker 3">
@@ -176,18 +176,39 @@
 
     <!-- START DOKUMENTASI SECTION -->
     <section class="dokumentasi-section" id="dokumentation">
-        <h2>Dokumentasi</h2>
-        <p>
-            Cuplikan momen LKMM Pra-Dasar, pelatihan dasar untuk mahasiswa baru Informatika dalam mengasah kepemimpinan dan keterampilan organisasi.
-        </p>
-        <div class="dokumentasi-container">
-            <div class="div1"><img src="assets/image/dokumentasi-section/1.JPG" alt="Gambar 1"></div>
-            <div class="div2"><img src="assets/image/dokumentasi-section/2.JPG" alt="Gambar 2"></div>
-            <div class="div3"><img src="assets/image/dokumentasi-section/3.JPG" alt="Gambar 3"></div>
-            <div class="div4"><img src="assets/image/dokumentasi-section/4.JPG" alt="Gambar 4"></div>
-            <div class="div5"><img src="assets/image/dokumentasi-section/5.JPG" alt="Gambar 5"></div>
-            <div class="div6"><img src="assets/image/dokumentasi-section/6.JPG" alt="Gambar 6"></div>
+      <h2>Dokumentasi</h2>
+      <p>
+          Cuplikan momen LKMM Pra-Dasar, pelatihan dasar untuk mahasiswa baru Informatika dalam mengasah kepemimpinan dan keterampilan organisasi.
+      </p>
+
+      <!-- Slider Atas -->
+      <div class="slider slider-right">
+        <div class="slider-track">
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/agate-1.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/agate-2.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/agate-3.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/agate-4.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/agate-5.webp')"></div>
         </div>
+      </div>
+
+      <!-- Slider Bawah -->
+      <div class="slider slider-left">
+        <div class="slider-track">
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/hgtc-1.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/hgtc-2.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/hgtc-3.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/hgtc-4.webp')"></div>
+          <div class="card-dokumentasi" onclick="openPopup('assets/images/documentation/hgtc-5.webp')"></div>
+          <!-- Tambah gambar lain sesuai kebutuhan -->
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="popup">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <img id="popup-image" src="" alt="Popup Gambar">
+      </div>
     </section>
     <!-- END DOKUMENTASI SECTION -->
     
@@ -359,7 +380,7 @@
         action="https://script.google.com/macros/s/AKfycbxTG6PhBkuHSXUEPHdYbcScIw8PFiASItNo182lSFGasRn5qkIEdYhCMMTStLejF8CM/exec"
       >
         <p class="title">Contact Us</p>
-        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <span class="close-button" onclick="closePopup()">&times;</span>
         <p class="message">we’re always open to any suggestions you may have</p>
         <div class="flex">
           <label>

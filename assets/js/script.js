@@ -80,12 +80,35 @@ document.querySelectorAll("#menu-list a").forEach((link) => {
 document.addEventListener("DOMContentLoaded", function () {
   let getStartedBtn = document.querySelector(".btn-primary");
   let aboutSection = document.getElementById("about");
-
+  
   // Ketika tombol Get Started diklik, scroll ke bagian About
   getStartedBtn.addEventListener("click", function () {
     aboutSection.scrollIntoView({ behavior: "smooth" });
   });
+
+  let whatDoYouGetBtn = document.querySelector(".btn-secondary");
+  let benefitSection = document.getElementById("benefit");
+
+  whatDoYouGetBtn.addEventListener("click", function () {
+    benefitSection.scrollIntoView({ behavior: "smooth" });
+  });
 });
+
+// DOKUMENTASI SECTION
+document.querySelectorAll('.slider-track').forEach(track => {
+  track.innerHTML += track.innerHTML; // Gandakan isi track
+});
+
+function openPopup(imageSrc) {
+  const popup = document.getElementById("popup");
+  const popupImage = document.getElementById("popup-image");
+  popupImage.src = imageSrc;
+  popup.style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
 
 //  FAQ SECTION - ACCORDION
 document.addEventListener("DOMContentLoaded", () => {
@@ -105,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   let contactBtn = document.querySelector(".faq-section button");
   let popup = document.getElementById("contact");
-  let closeBtn = document.querySelector(".close-btn");
+  let closeBtn = document.querySelector(".close-button");
 
   // Ketika tombol Contact Us diklik
   contactBtn.addEventListener("click", function () {

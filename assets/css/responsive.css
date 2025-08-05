@@ -1,0 +1,441 @@
+@media (max-width: 1024px) {
+   /*==================== NAVBAR ====================*/
+    nav {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    nav .logo img{
+        width: 10%;
+    }
+    nav .logo span {
+        font-size: 1.5rem;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    nav ul {
+        background-color: #FFFFFF; 
+        position: absolute;
+        top: 96px; 
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    nav .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hero-section,
+    .about-section,
+    .maskot-section,
+    .benefit-section,
+    .guidebook-section,
+    .greatspeaker-section,
+    .dokumentasi-section,
+    .aftermovie-section,
+    .faq-section {
+        height: auto;
+        padding: 60px 20px;
+    }
+    .about-section h2,
+    .maskot-section h2,
+    .benefit-section h2,
+    .greatspeaker-section h2,
+    .dokumentasi-section h2,
+    .aftermovie-section h2,
+    .faq-section h2 {
+        font-size: 11vw;
+        text-align: center;
+    }
+    
+    .card .content {
+        padding: 60px;
+    }
+    /*==================== BENEFIT SECTION ====================*/
+    .benefit-container {
+        background: url(../image/benefit-section/background.svg) no-repeat center center;
+        background-size: cover;
+        padding: 40px;
+    }
+
+    .greatspeaker-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .greatspeaker-content .greatspeaker-item {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .container-accordion {
+        width: 100%;
+    }
+
+    .footer-text {
+        padding: 60px 20px;
+        gap: 60px;
+    }
+    .logo-section {
+        margin: 0 0 80px;
+    }
+    .footer-bottom {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section,
+    .about-section,
+    .maskot-section,
+    .benefit-section,
+    .guidebook-section,
+    .greatspeaker-section,
+    .dokumentasi-section,
+    .aftermovie-section,
+    .faq-section {
+        height: auto;
+        padding: 60px 20px;
+    }
+    
+    .about-section h2,
+    .maskot-section h2,
+    .benefit-section h2,
+    .greatspeaker-section h2,
+    .dokumentasi-section h2,
+    .aftermovie-section h2,
+    .faq-section h2 {
+        font-size: 11vw;
+        text-align: center;
+    }
+    
+    .hero-section p,
+    .about-section p,
+    .maskot-section p,
+    .guidebook-section p,
+    .greatspeaker-section p,
+    .dokumentasi-section p,
+    .aftermovie-section p{
+        font-size: 1rem;
+    }
+
+    .about-section .text-about,
+    .maskot-content .text-maskot,
+    .greatspeaker-section .text-greatspeaker,
+    .dokumentasi-section p,
+    .aftermovie-section p {
+        max-width: 90%;
+    }
+
+    /*==================== NAVBAR ====================*/
+    nav {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    nav .logo img{
+        width: 18%;
+    }
+    nav .logo span {
+        font-size: 1.5rem;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    nav ul {
+        background-color: #FFFFFF; 
+        position: absolute;
+        top: 96px; 
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    nav .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /*==================== HERO SECTION ====================*/
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .card {
+        background-image: url("../image/hero-section/card-hp.svg");
+        flex-direction: column;
+        height: 700px;
+        text-align: center;
+    }
+    .card .buttons {
+        justify-content: center;
+        align-items: center;
+    }
+    .card .btn-primary,
+    .card .btn-secondary {
+        font-size: 0.7rem;
+    }
+    .card .content {
+        padding: 80px 20px;
+    }
+
+    /*==================== ABOUT SECTION ====================*/
+    .about-section .star1 {
+        width: 65px;
+        top: 0;
+    }
+    .about-section .star2 {
+        width: 50px;
+        top: 86%;
+    }
+    .about-section .pill {
+        width: 45px;
+        top: 90%;
+    }
+    .about-section .tube {
+        width: 30px;
+        top: 0;
+    }
+    .about-section .semicircle {
+        width: 60px;
+        top: 80%;
+        right: 0;
+    }
+
+    /*==================== MASKOT SECTION ====================*/
+    .maskot-section .star1 {
+        display: none;
+    }
+    .maskot-section .periwinkle {
+        display: none;
+    }
+
+    /*==================== BENEFIT SECTION ====================*/
+    .benefit-container {
+         background: url(../image/benefit-section/background-hp.svg) no-repeat center center;
+         background-size: cover;
+    }
+    
+    /*==================== GUIDEBOOK SECTION ====================*/
+    .guidebook-section h2 {
+        z-index: 1;
+        font-size: 11vw;
+        text-align: center;
+        max-width: 350px;
+    }
+    .guidebook-section .star1 {
+        width: 50px;
+        top: 35%;
+        left: 27%;
+    }
+    .guidebook-section .star2 {
+        width: 90px;
+        top: 84%;
+        left: 50%;
+    }
+    .guidebook-section .pill {
+        width: 60px;
+        top: 2%;
+        left: 5%;
+    }
+    .guidebook-section .tube {
+        width: 60px;
+        top: 0;
+        right: -8%;
+    }
+    .guidebook-section .semicircle {
+        z-index: 2;
+        width: 60px;
+        top: 100%;
+        left: 90%;
+    }
+    .guidebook-container .retangle-kanan {
+        width:300px;
+        top: 55%;
+        right: -200px;
+    }
+    .guidebook-container .retangle-kiri {
+        width: 300px;
+        top: 55%;
+        left: -200px;
+    }
+
+    /*==================== GREATSPEAKER SECTION ====================*/
+    .greatspeaker-section .star {
+        width: 60px;
+        top: 30%;
+        left: 90%;
+    }
+    .greatspeaker-section .pill {
+        width: 50px;
+        top: 60%;
+        left: 3%;
+    }
+    .greatspeaker-section .tube {
+        width: 80px;
+        top: 4%;
+        left: 0;
+    }
+    .greatspeaker-section .semicircle {
+        width: 50px;
+        top: 80%;
+        right: 0;
+    }
+
+    /*==================== AFTERMOVIE SECTION ====================*/
+    .aftermovie-section .star1 {
+        width: 90px;
+        top: -3%;
+        left: 0;
+    }
+    .aftermovie-section .star2 {
+        width: 90px;
+        top: 14%;
+        left: 80%;
+    }
+    .aftermovie-section .star3 {
+        width: 70px;
+        top: 58%;
+        left: 0;
+    }
+    .aftermovie-section .awan {
+        width: 100px;
+        top: 85%;
+        right: 0;
+    }
+
+    /*==================== FAQ SECTION ====================*/
+    .faq-section p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+    .faq-section .button-with-icon {
+        margin-bottom: 3rem;
+    }
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .faq-section .star1 {
+        width: 40px;
+        top: 5%;
+        left: 5%;
+    }
+    .faq-section .star2 {
+        width: 40px;
+        top: 90%;
+        left: 90%;
+    }
+    .faq-section .pill {
+        width: 40px;
+        top: 92%;
+        left: 0;
+    }
+    .faq-section .tube {
+        width: 40px;
+        top: 9%;
+        right: -2%;
+    }
+    .faq-section .semicircle {
+        display: none;
+    }
+    .container-accordion {
+        margin: -20px 0 0 0;
+        width: 100%;
+    }
+    .container-accordion li {
+        margin: 10px;
+        padding: 0.5rem;
+    }
+
+    .container-accordion li label,
+    .container-accordion .content p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .container-accordion li label i {
+        font-size: 1.2rem;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* =============== section Footer ================ */
+    .footer-container {
+        padding: 40px;
+    }
+    .footer-text{
+        gap: 35px;
+        padding: 20px 0 0 0;
+    }
+    .section-3{
+        margin-top: -40px; 
+    }
+    .logo-section{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 360px){
+    .hero-section p,
+    .about-section p,
+    .maskot-section .text-maskot p,
+    .guidebook-section p,
+    .greatspeaker-section .text-greatspeaker,
+    .dokumentasi-section p,
+    .aftermovie-section p{
+        font-size: 0.9rem;
+    }
+
+    /* HERO SECTION */
+    .hero-section h1 {
+        font-size: 1.33rem;
+    }
+    .card {
+        height: 600px;
+    }
+    .card .btn-primary,
+    .card .btn-secondary {
+        font-size: 0.6rem;
+    }
+
+    /* FAQ SECTION */
+     .faq-section p {
+        font-size: 0.9rem;
+    }
+    .container-accordion li label,
+    .container-accordion .content p {
+        font-size: 0.9rem;
+    }
+
+
+    /* FOOTER SECTION */
+    .footer-container {
+        padding: 20px;
+    }
+    .footer-text{
+        gap: 60px;
+        padding: 20px 0 0 0;
+    }
+    .section-3{
+        margin-top: -10px; 
+    }
+}

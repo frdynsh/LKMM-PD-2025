@@ -48,6 +48,7 @@
     .about-section h2,
     .maskot-section h2,
     .benefit-section h2,
+    .guidebook-section h2,
     .greatspeaker-section h2,
     .dokumentasi-section h2,
     .aftermovie-section h2,
@@ -86,6 +87,9 @@
     }
     .logo-section {
         margin: 0 0 80px;
+    }
+    .section-3 {
+        margin: 0; 
     }
     .footer-bottom {
         margin-top: -40px;
@@ -391,6 +395,9 @@
 
     .footer-bottom {
         margin-top: 0;
+    }
+    .footer-bottom p {
+        font-size: 1rem;
     }
 }
 

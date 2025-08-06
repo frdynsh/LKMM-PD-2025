@@ -1,21 +1,20 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyhsy2TC0GtF1pOM__ywKQ_IC2Pxv47LvsgKyvQ1U9upKMQngmyyToJFE0BbZjV02k/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyZkNyeIUE0ObaLBkYARPsC0dA5OSjpMzZLNIhaqbBQE8I1Rre5DdRGc2FMajdKB_JH/exec';
 
 const form = document.forms['contact-form'];
 
 form.addEventListener('submit', e => {
-    e.preventDefault(); // Mencegah form reload default
-
-    fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form), 
-    })
-    .then(response => response.text()) 
-    .then(data => {
-        alert("Thank you! Your form has been submitted successfully.");
-        form.reset(); 
-    })
-    .catch(error => {
-        console.error('Error!', error.message);
+  e.preventDefault();
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert("Thank you! Your form has been submitted successfully");
+    form.reset();
+  })
+  .catch(error => {
+    console.error('Error!', error.message);
         alert("There was an error submitting the form.");
-    });
+  });
 });

@@ -94,6 +94,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// GUIDEBOOK  SECTION
+if (window.innerWidth < 768) { 
+  document.querySelectorAll('.pdf').forEach(img => {
+    img.setAttribute('data-width', window.innerWidth * 0.8); // 80% layar
+    img.setAttribute('data-height', window.innerHeight * 0.7); // 80% layar
+  });
+}
+
+
 // DOKUMENTASI SECTION
 document.querySelectorAll('.slider-track').forEach(track => {
   track.innerHTML += track.innerHTML; // Gandakan isi track

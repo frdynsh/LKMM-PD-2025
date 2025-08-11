@@ -261,7 +261,7 @@ nav ul li a:hover {
 }
 .maskot-content .text-maskot p {
     color: #FFFFFF;
-    max-width: 1000px;
+    max-width: 1100px;
     font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 300;
     line-height: 30px;
@@ -370,7 +370,7 @@ nav ul li a:hover {
     -webkit-text-fill-color: transparent; 
     font-size: clamp(4.5rem, 8.64086vw, 5rem);
     font-weight: bold;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 .guidebook-section .star1 {
     position: absolute;
@@ -409,6 +409,12 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.guidebook-container .pdf {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .guidebook-container .retangle-kanan {
     position: absolute;
@@ -468,7 +474,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 10px;
 }
 .greatspeaker-content .greatspeaker-item .blue {
     background-color: #076498;

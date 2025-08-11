@@ -60,6 +60,34 @@
     .card .content {
         padding: 60px;
     }
+    /*==================== GUIDEBOOK SECTION ====================*/
+    .guidebook-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .guidebook-section h2 {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .guidebook-container .pdf {
+        width: 80%;
+        height: auto;
+        max-width: 500px;
+    }
+
+    /* Skala dekorasi */
+    .guidebook-section .star1,
+    .guidebook-section .star2,
+    .guidebook-section .pill,
+    .guidebook-section .tube,
+    .guidebook-section .semicircle,
+    .guidebook-container .retangle-kanan,
+    .guidebook-container .retangle-kiri {
+        transform: scale(0.8);
+    }
     /*==================== BENEFIT SECTION ====================*/
     .benefit-container {
         background: url(../image/benefit-section/background.svg) no-repeat center center;
@@ -237,7 +265,12 @@
         z-index: 1;
         font-size: 11vw;
         text-align: center;
-        max-width: 350px;
+        max-width: 300px;
+        margin-bottom: 100px;
+    }
+    .guidebook-container .pdf {
+        width: 90%;
+        max-width: 200px;
     }
     .guidebook-section .star1 {
         width: 50px;

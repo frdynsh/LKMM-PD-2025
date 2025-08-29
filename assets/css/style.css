@@ -471,7 +471,6 @@ nav ul li a:hover {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }

@@ -1,3 +1,17 @@
+// Fungsi Loader
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader-wrapper");
+    if (!loader) return;
+
+    // TAHAN preloader selama 5 detik
+    setTimeout(() => {
+        // BARU trigger animasi slide + fade
+        document.body.classList.add("page-loaded");
+        loader.style.pointerEvents = "none";
+        loader.style.visibility = "hidden";
+    }, 1000);
+});
+
 // Mencegah Inspect Element dan View Source
 document.addEventListener("keydown", function (event) {
   if (

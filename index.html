@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>LKMMPD – HIMTIKA – Himpunan Mahasiswa Informatika</title>
 
+    <meta name="description" content="Kegiatan mahasiswa baru Informatika untuk membekali keterampilan dasar dalam berkomunikasi, mengenal potensi diri, mengembangkan sifat kritis dan memposisikan diri secara efektif dalam organisasi kemahasiswaan." />
+    <meta name="keywords" content="HIMTIKA, LKMMPD, LKMM-PD, Latihan Kepemimpinan Manajemen Mahasiswa, Himpunan Mahasiswa Informatika, UNSIKA, Fakultas Ilmu Komputer, Fasilkom, Informatika" />
+    <meta name="author" content="HIMTIKA Unsika" />
+
     <!-- pdf -->
     <script src='//static.anyflip.com/plugin/LightBox/js/anyflp-light-box-api-min.js'></script>
 
@@ -23,6 +27,20 @@
   </head>
   <body>
 
+    <!-- Preloader -->
+    <div id="loader-wrapper" class="container-preloader">
+        <img src="assets/image/icon/logo.png" alt="lkmm-pd-logo" class="preloader-logo">
+        <div class="preloader-icons relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 66" height="100px" width="100px" class="spinner">
+              <circle stroke="url(#gradient)" r="20" cy="33" cx="33" stroke-width="0.5" fill="transparent" class="path"></circle>
+                <linearGradient id="gradient">
+                  <stop stop-opacity="1" stop-color="#fe0000" offset="0%"></stop>
+                  <stop stop-opacity="0" stop-color="#003481" offset="100%"></stop>
+                </linearGradient>
+            </svg> 
+        </div>
+    </div>
+    
     <!-- START NAVBAR -->
     <nav>
       <div class="logo">
@@ -563,7 +581,7 @@
     <!-- Back To HIMTIKA Button -->
     <div class="Btn-parent">
       <a href="https://himtika.cs.unsika.ac.id/">
-          <button class="Btn">
+          <button class="Btn-container">
               <div class="sign">
                   <img
                       src="assets/image/icon/himtika.png"
